@@ -18,13 +18,48 @@ let score = undefined
 let isLoggedIn = 1
 
 let booleanIsLoggedIn = Boolean(isLoggedIn);
-console.log(booleanIsLoggedIn);
+//console.log(booleanIsLoggedIn);
 //"" => false;
 // 1=> true, 0 => false, "swati =>true"
 
 let someNumber = 34;
 let stringNumber = String(someNumber);
 
-console.log(stringNumber);
-console.log(typeof (stringNumber))
+//console.log(stringNumber);
+//console.log(typeof (stringNumber))
 //browser gives String values.
+
+// ***********************Operations************************************
+
+let value = 4
+let negValue = - value
+
+console.log(negValue);
+
+// console.log(2+2);
+// console.log(2-2);
+// console.log(2*2);
+// console.log(2**3);
+// console.log(2/3);
+// console.log(2%3); modoulus
+
+
+let str1 ="hello"
+let str2 =" Swati"
+str3 = str1 + str2;
+console.log(str3);
+
+// console.log("1" + 2); // output 12
+// console.log(1 +"2"); // output 12
+// console.log("1" + 2 + 2); // output 122
+// console.log(1 + 4 +"2"+"2") //output 522
+
+
+console.log(+true);// output 1
+console.log(+"");
+let num1, num2, num3
+
+let gameCounter = 100;
+gameCounter++;//postfix
+++ gameCounter;// prefix
+console.log(gameCounter);
