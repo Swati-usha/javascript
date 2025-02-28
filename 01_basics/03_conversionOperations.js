@@ -52,14 +52,18 @@ console.log(str3);
 // console.log("1" + 2); // output 12
 // console.log(1 +"2"); // output 12
 // console.log("1" + 2 + 2); // output 122
-// console.log(1 + 4 +"2"+"2") //output 522
+// console.log((1 + 4) +"2"+"2") //output 522
 
-
-console.log(+true);// output 1
-console.log(+"");
+// console.log(true); // output true
+// console.log(+true);// output 1 not a good practice, true + is not possible.
+// console.log(+"");
 let num1, num2, num3
+
+num1 = num2 = num3 = 2 + 2
 
 let gameCounter = 100;
 gameCounter++;//postfix
-++ gameCounter;// prefix
+++gameCounter;// prefix
 console.log(gameCounter);
+
+// read from ecma and js mdn.
