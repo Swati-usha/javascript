@@ -39,3 +39,24 @@ console.log(typeof(heros))
 // Refernce Type (NoN Primitive)
 // Array, Objects,Functions.
 
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Stack(Primitive)  and Heap(Non-Primitve)
+
+let mydatabaseName ="Postgresql";
+let anotherDatabaseUser = mydatabaseName;
+
+mydatabaseName = "Snowflake";
+console.log (mydatabaseName);
+console.log (anotherDatabaseUser);
+
+let userOne ={
+    email: "user@google.com",
+    upi : "userOne@ybl"
+}
+
+let userTwo = userOne;
+userTwo.email = "userTwo@google.com"
+console.log(userTwo.email);
+console.log(userOne.email);
+
+
