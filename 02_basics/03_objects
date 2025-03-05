@@ -1,0 +1,13 @@
+// singleton
+//object.create
+
+//object literals
+const jsuser ={
+    name:'Swati',
+    age:24,
+    location:'Jaipur',
+    email:"swati@google.com",
+    isLoggedIn: false,
+    lastLoginDays:['Monday',"Saturday"]
+}
+
