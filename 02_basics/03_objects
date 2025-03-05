@@ -2,12 +2,40 @@
 //object.create
 
 //object literals
+
+const mysym = Symbol("key1");
+
+
 const jsuser ={
     name:'Swati',
     age:24,
+    [mysym] :"mykey1",
     location:'Jaipur',
     email:"swati@google.com",
     isLoggedIn: false,
     lastLoginDays:['Monday',"Saturday"]
 }
 
+console.log(jsuser.email);
+console.log(jsuser["email"]);
+console.log(jsuser["name"]);
+console.log(jsuser[mysym]);// Symbol is referenced using square brackets only.
+
+console.log(typeof mysym);
+
+jsuser.email ="swati.tyagi@gmail.com";
+//Object.freeze(jsuser); this will freeze the object ,hence we cannot change the values of an object once its values are freezed.
+jsuser.email = "tyaagiswati@gmail.com";
+console.log(jsuser);
+
+// functions in js
+jsuser.greeting = function (){
+        console.log(`Hello jsuser ${this.name}`);// string interpolation is used(``).
+}
+
+jsuser.greetingTwo = function(){
+        console.log(`Hello jsuser`)
+}
+
+console.log(jsuser.greeting());
+console.log(jsuser.greetingTwo());
