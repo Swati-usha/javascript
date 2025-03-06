@@ -39,3 +39,5 @@ console.log(Object.entries(regularUser));
 // using isloggedin, we can check if an object has certain property.
 
 console.log(regularUser.hasOwnProperty('isLoggedIn'));
+
+
