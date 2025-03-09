@@ -37,3 +37,20 @@ function one(){
     two()
 }
 one()
+
+// ++++++++++++++++++++++++++++++++++++++++++++Interesting++++++++++++++++++++++++++++++++++++++
+
+// Here the function is called before its declaration, it is termed as hoisting in javascript. 
+// we cannot do the same with the variables, they must be declared prior their calling.
+console.log(addone(5));
+function addone(num){
+    return num +1;
+}
+
+
+// here it will give error as it is declared as a variable here. EXECUTION CONTEXT PLAYS A VITAL ROLE HERE.
+console.log(result(6));
+const result = function(num1){
+    return num1 +2;
+}
+
