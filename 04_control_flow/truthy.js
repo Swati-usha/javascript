@@ -40,7 +40,7 @@ val1 = null ?? 10
 val1 = null ?? 10 ?? 20;
 // It will return the first not null value.
 
-// ternary operator(?)
+// Terniary operator(?)
 //condition ? true : false;
 
 const iceTeaPrice = 100
