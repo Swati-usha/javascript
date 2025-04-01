@@ -70,7 +70,8 @@ form.addEventListener('submit', function (e) {
       results.innerHTML = `<span>${bmi}, You are Over Weight</span>`;
     }
   }
-});```
+});
+```
 
 ## project3 solution
 
