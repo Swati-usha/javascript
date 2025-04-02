@@ -83,8 +83,9 @@ let date = new Date();
 setInterval(function () {
   // console.log(date.toLocaleTimeString());
   clock.innerHTML = date.toLocaleTimeString();
-}, 500);```
+}, 500);
 
+```
 ## project 4 solution
 ```javascript
 
@@ -187,4 +188,5 @@ function newGame() {
     playGame = true;
   });
 }
+
 ```
