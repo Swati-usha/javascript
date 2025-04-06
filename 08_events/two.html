@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asyn code</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+
+<script>
+    const saySwati = function(){
+        console.log("Swati")
+        console.log("start")
+    }
+    const changeMe = setTimeout(saySwati,2000);
+
+    const stopSwati = function(){
+        clearTimeout(changeMe)
+        console.log('Stopped')
+    }
+
+    const stoppe = clearTimeout(changeMe)
+
+    const startref = document.querySelector('#start')
+    const stopref = document.querySelector('#stop')
+
+    startref.addEventListener('click',changeMe);
+    stopref.addEventListener('click',stoppe);
+    console.log('stopped')
+
+</script>
+</html>
