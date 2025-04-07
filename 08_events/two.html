@@ -12,25 +12,26 @@
 </body>
 
 <script>
+const stopref = document.querySelector('#stop')
+
     const saySwati = function(){
         console.log("Swati")
         console.log("start")
     }
-    const changeMe = setTimeout(saySwati,2000);
+    const changeText = function(){
+        document.querySelector('h1').innerHTML ="Best JS SERIES";
+        }
+       
+    
+    const changeMe = setTimeout(changeText,2000);
+    
+   stopref.addEventListener('click',function(){
+    clearTimeout(changeMe)
+    console.log("Stopped")
+   }) 
+   
+    
 
-    const stopSwati = function(){
-        clearTimeout(changeMe)
-        console.log('Stopped')
-    }
-
-    const stoppe = clearTimeout(changeMe)
-
-    const startref = document.querySelector('#start')
-    const stopref = document.querySelector('#stop')
-
-    startref.addEventListener('click',changeMe);
-    stopref.addEventListener('click',stoppe);
-    console.log('stopped')
 
 </script>
 </html>
