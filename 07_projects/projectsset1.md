@@ -190,3 +190,67 @@ function newGame() {
 }
 
 ```
+## project6 
+
+``` javascript
+// generate a random color
+
+const randomColor = function () {
+  const hex = '0123456789ABCDEF';
+  let color = '#';
+
+  for (let i = 0; i < 6; i++) {
+    color += hex[Math.floor(Math.random() * 16)];
+  }
+  return color;
+};
+
+const startRef = document.querySelector('#start');
+
+const stopRef = document.querySelector('#stop');
+
+let intervalId;
+
+const startChangingColor = function () {
+  if (!intervalId) {
+    intervalId = setInterval(changeBgColor, 2000);
+  }
+
+  function changeBgColor() {
+    document.body.style.backgroundColor = randomColor();
+  }
+};
+
+const stopChangingColor = function () {
+  clearInterval(intervalId);
+  intervalId = null;
+};
+
+startRef.addEventListener('click', startChangingColor);
+
+stopRef.addEventListener('click', stopChangingColor);
+console.log(randomColor());
+```
+## project 5 
+``` javascript
+console.log('Project 5');
+
+const divId = document.querySelector('#insert');
+
+window.addEventListener('keydown', (e) => {
+  divId.innerHTML = `<div class='color'>
+  <table>
+  <tr>
+    <th>Key</th>
+    <th>Keycode</th>
+    <th>Code</th>
+  </tr>
+  <tr>
+    <td>${e.key === ' ' ? 'Space' : e.key }</td>
+    <td>${e.keyCode}</td>
+    <td>${e.code}</td>
+  </tr>
+</table>
+  </div>`;
+});
+```
