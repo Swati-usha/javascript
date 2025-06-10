@@ -54,6 +54,7 @@ let userOne ={
     upi : "userOne@ybl"
 }
 
+// refernce is passed, so change will be in both the emails.
 let userTwo = userOne;
 userTwo.email = "userTwo@google.com"
 console.log(userTwo.email);
